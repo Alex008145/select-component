@@ -133,7 +133,7 @@ export function Select({ multiple, value, onChange, options }: SelectProps) {
             onMouseEnter={() => setHighlightedIndex(index)}
             key={option.value}
             className={`${styles.option} ${
-              isOptionSelected(option) > 0 ? styles.selected : ""
+              isOptionSelected(option) ? styles.selected : ""
             }
             ${index === highlightedIndex ? styles.highlighted : ""}`}
           >
